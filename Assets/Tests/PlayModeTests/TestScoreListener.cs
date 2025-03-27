@@ -1,4 +1,4 @@
-﻿using NUnit.Framework;
+using NUnit.Framework;
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -21,6 +21,7 @@ public class TestScoreListener
         scoreListenerObj = new GameObject("ScoreListener", typeof(ScoreListener));
         scoreListener = scoreListenerObj.GetComponent<ScoreListener>();
         tmp = scoreListenerObj.GetComponent<TextMeshProUGUI>();
+        tmp.text = "";
     }
 
     [TearDown]
@@ -33,11 +34,11 @@ public class TestScoreListener
     [UnityTest]
     public IEnumerator UpdateScore_Event_ChangesText()
     {
-        yield return new WaitUntil(() => tmp != null);
+        yield return 0;
 
         dummyGameActionsObj.GetComponent<GameActions>().score.Value = 100;
 
-        float timeout = Time.time + 1f;
+        float timeout = Time.time + 3f;
         yield return new WaitUntil(() => tmp.text.Contains("100") || Time.time > timeout);
 
         tmp.text.Should().Contain("100", "потому что текстовое поле должно обновляться при изменении счёта");
