@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CoverageReport scope="Summary">
   <Summary>
-    <Generatedon>28.03.2025 - 0:55:14</Generatedon>
-    <Parser>MultiReportParser (4x OpenCoverParser)</Parser>
+    <Generatedon>28.03.2025 - 2:11:46</Generatedon>
+    <Parser>MultiReportParser (8x OpenCoverParser)</Parser>
     <Assemblies>1</Assemblies>
     <Classes>13</Classes>
-    <Files>12</Files>
-    <Coveredlines>626</Coveredlines>
-    <Uncoveredlines>53</Uncoveredlines>
-    <Coverablelines>679</Coverablelines>
-    <Totallines>1058</Totallines>
+    <Files>24</Files>
+    <Coveredlines>1252</Coveredlines>
+    <Uncoveredlines>106</Uncoveredlines>
+    <Coverablelines>1358</Coverablelines>
+    <Totallines>2118</Totallines>
     <Linecoverage>92.1</Linecoverage>
     <Coveredbranches>0</Coveredbranches>
     <Totalbranches>0</Totalbranches>
-    <Coveredmethods>64</Coveredmethods>
-    <Totalmethods>68</Totalmethods>
+    <Coveredmethods>128</Coveredmethods>
+    <Totalmethods>136</Totalmethods>
     <Methodcoverage>94.1</Methodcoverage>
   </Summary>
   <Coverage>
-    <Assembly name="Scripts" classes="13" coverage="92.1" coveredlines="626" coverablelines="679" totallines="1105" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="64" totalmethods="68" methodcoverage="94.1">
-      <Class name="Cell" coverage="100" coveredlines="21" coverablelines="21" totallines="51" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
-      <Class name="CellView" coverage="100" coveredlines="37" coverablelines="37" totallines="81" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="7" totalmethods="7" methodcoverage="100" />
-      <Class name="DataManager" coverage="90.3" coveredlines="28" coverablelines="31" totallines="59" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="6" methodcoverage="83.3" />
-      <Class name="FileDataManager" coverage="100" coveredlines="55" coverablelines="55" totallines="92" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="5" totalmethods="5" methodcoverage="100" />
-      <Class name="GameActions" coverage="95.7" coveredlines="90" coverablelines="94" totallines="141" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="11" methodcoverage="90.9" />
-      <Class name="GameData" coverage="100" coveredlines="4" coverablelines="4" totallines="13" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="GameField" coverage="87.3" coveredlines="297" coverablelines="340" totallines="417" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="13" totalmethods="15" methodcoverage="86.6" />
-      <Class name="InputManager" coverage="93.7" coveredlines="45" coverablelines="48" totallines="86" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
-      <Class name="ObservableInt" coverage="100" coveredlines="9" coverablelines="9" totallines="21" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
-      <Class name="Pair[T,U]" coverage="100" coveredlines="5" coverablelines="5" totallines="14" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
-      <Class name="ScoreListener" coverage="100" coveredlines="12" coverablelines="12" totallines="36" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
-      <Class name="Serializable2DArray" coverage="100" coveredlines="18" coverablelines="18" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="3" totalmethods="3" methodcoverage="100" />
-      <Class name="Serializable2DArrayPackage[TElement]" coverage="100" coveredlines="5" coverablelines="5" totallines="47" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="1" totalmethods="1" methodcoverage="100" />
+    <Assembly name="Scripts" classes="13" coverage="92.1" coveredlines="1252" coverablelines="1358" totallines="2212" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="128" totalmethods="136" methodcoverage="94.1">
+      <Class name="Cell" coverage="100" coveredlines="42" coverablelines="42" totallines="102" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="14" methodcoverage="100" />
+      <Class name="CellView" coverage="100" coveredlines="74" coverablelines="74" totallines="162" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="14" totalmethods="14" methodcoverage="100" />
+      <Class name="DataManager" coverage="90.3" coveredlines="56" coverablelines="62" totallines="118" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="12" methodcoverage="83.3" />
+      <Class name="FileDataManager" coverage="100" coveredlines="110" coverablelines="110" totallines="184" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="10" totalmethods="10" methodcoverage="100" />
+      <Class name="GameActions" coverage="95.7" coveredlines="180" coverablelines="188" totallines="282" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="20" totalmethods="22" methodcoverage="90.9" />
+      <Class name="GameData" coverage="100" coveredlines="8" coverablelines="8" totallines="26" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="GameField" coverage="87.3" coveredlines="594" coverablelines="680" totallines="834" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="26" totalmethods="30" methodcoverage="86.6" />
+      <Class name="InputManager" coverage="93.7" coveredlines="90" coverablelines="96" totallines="172" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="12" totalmethods="12" methodcoverage="100" />
+      <Class name="ObservableInt" coverage="100" coveredlines="18" coverablelines="18" totallines="42" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="Pair[T,U]" coverage="100" coveredlines="10" coverablelines="10" totallines="28" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
+      <Class name="ScoreListener" coverage="100" coveredlines="24" coverablelines="24" totallines="74" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="4" totalmethods="4" methodcoverage="100" />
+      <Class name="Serializable2DArray" coverage="100" coveredlines="36" coverablelines="36" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="6" totalmethods="6" methodcoverage="100" />
+      <Class name="Serializable2DArrayPackage[TElement]" coverage="100" coveredlines="10" coverablelines="10" totallines="94" branchcoverage="" coveredbranches="0" totalbranches="0" coveredmethods="2" totalmethods="2" methodcoverage="100" />
     </Assembly>
   </Coverage>
 </CoverageReport>

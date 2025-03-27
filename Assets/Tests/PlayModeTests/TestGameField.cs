@@ -9,6 +9,7 @@ using FluentAssertions;
 public class TestGameField
 {
     GameObject gameFieldObj;
+    GameObject gameActionsObj;
     GameField gameField;
     GameObject inputManagerObj;
     private List<Transform> dummyTransforms;
@@ -16,7 +17,7 @@ public class TestGameField
     [SetUp]
     public void SetUp()
     {
-        GameObject gameActionsObj = new GameObject("GameActions", typeof(GameActions));
+        gameActionsObj = new GameObject("GameActions", typeof(GameActions));
         gameFieldObj = new GameObject("GameField");
         gameFieldObj.SetActive(false);
         gameField = gameFieldObj.AddComponent<GameField>();
@@ -41,6 +42,7 @@ public class TestGameField
     {
         Object.DestroyImmediate(gameFieldObj);
         Object.DestroyImmediate(inputManagerObj);
+        Object.DestroyImmediate(gameActionsObj);
         foreach (var t in dummyTransforms)
         {
             Object.DestroyImmediate(t.gameObject);

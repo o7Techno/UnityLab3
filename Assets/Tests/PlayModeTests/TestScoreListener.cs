@@ -4,6 +4,7 @@ using TMPro;
 using System.Collections;
 using UnityEngine.TestTools;
 using FluentAssertions;
+using System.Reflection;
 
 public class TestScoreListener
 {
@@ -18,8 +19,12 @@ public class TestScoreListener
         dummyGameActionsObj = new GameObject("GameActions", typeof(GameActions));
         GameActions gameActions = dummyGameActionsObj.GetComponent<GameActions>();
 
-        scoreListenerObj = new GameObject("ScoreListener", typeof(ScoreListener));
-        scoreListener = scoreListenerObj.GetComponent<ScoreListener>();
+        scoreListenerObj = new GameObject("ScoreListener");
+        scoreListenerObj.SetActive(false);
+        scoreListener = scoreListenerObj.AddComponent<ScoreListener>();
+        FieldInfo field = typeof(ScoreListener).GetField("gameActions", BindingFlags.Instance | BindingFlags.NonPublic);
+        field.SetValue(scoreListener, gameActions);
+        scoreListenerObj.SetActive(true);
         tmp = scoreListenerObj.GetComponent<TextMeshProUGUI>();
         tmp.text = "";
     }
@@ -34,12 +39,8 @@ public class TestScoreListener
     [UnityTest]
     public IEnumerator UpdateScore_Event_ChangesText()
     {
-        yield return 0;
-
         dummyGameActionsObj.GetComponent<GameActions>().score.Value = 100;
-
-        float timeout = Time.time + 3f;
-        yield return new WaitUntil(() => tmp.text.Contains("100") || Time.time > timeout);
+        yield return new WaitUntil(() => tmp.text.Contains("100"));
 
         tmp.text.Should().Contain("100", "потому что текстовое поле должно обновляться при изменении счёта");
     }

@@ -8,9 +8,11 @@ public class ScoreListener : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI text;
+
+    GameActions gameActions;
     private void Awake()
     {
-        GameActions gameActions = FindAnyObjectByType<GameActions>();
+        gameActions = FindAnyObjectByType<GameActions>();
         if (gameActions)
         {
             score = gameActions.score;
